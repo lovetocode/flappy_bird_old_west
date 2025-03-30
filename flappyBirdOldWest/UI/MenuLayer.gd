@@ -26,3 +26,9 @@ func _init_gameOver(score, highScore):
 
 func _on_Restart_pressed():
 	get_tree().reload_current_scene()
+
+func _on_Credits_pressed():
+	get_tree().change_scene("res://UI/Credits.tscn")
+	
+func _on_Quit_pressed():
+	get_tree().quit()
